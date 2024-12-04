@@ -62,7 +62,7 @@ class Lexer {
         this.start()
     }
 
-    // Advaces past current character, returning next one \\
+    // Advances past current character, returning next one \\
     advance() {
         this.currentPos++
         this.linePos++
@@ -78,7 +78,7 @@ class Lexer {
         return advancedPast
     }
 
-    // Looks up the next character and returns it. (Does not advace!) \\
+    // Looks up the next character and returns it. (Does not Advance!) \\
     peek(amount = 1) {
         return this.src[this.currentPos + amount]
     }
